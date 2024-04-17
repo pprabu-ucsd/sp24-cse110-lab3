@@ -2,54 +2,111 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pomodoro Timer First Brainstorm</title>
+    <title>NFL Transfers Meetings</title>
 </head>
 <body>
-    <h1>Pomodoro Timer First Brainstorm</h1>
-    <h2>Meeting Topic: Brainstorming</h2>
-    <h3>Date: April 16, 2024</h3>
+    <header>
+        <h1>Meeting 1</h1>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <h2>Meeting Topic: Seahawks</h2>
+        <nav><a href="https://www.seahawks.com/">Seahawks Website</a></nav>
+        <h3>Date: April 16, 2024</h3>
+    </header>
 
     <h3>Attendance List:</h3>
-    <ul>
-        <li>John Doe</li>
-        <li>Jane Smith</li>
-        <li>Alexander Johnson</li>
-    </ul>
+    <div>
+        <span>
+            <ul>
+                <li>Pranav Prabu</li>
+                <li>Jane Smith</li>
+                <li>Alexander Johnson</li>
+            </ul>
+        </span>
+    </div>
 
     <h3>Agenda:</h3>
     <ol>
-        <li>Introduction to Pomodoro Timer project</li>
-        <li>Discussion on timer features</li>
-        <li>Assignment of tasks</li>
+        <li>Discuss New Signings</li>
+        <li>Decide on Key Roles</li>
+        <li>Understand the Depth Chart</li>
     </ol>
 
     <h3>Unfinished Business from Last Meeting:</h3>
     <p>None</p>
 
-    <h3>New Business:</h3>
-    <ul>
-        <li>Decide on programming language for implementation</li>
-        <li>Select UI design framework</li>
-        <li>Set deadlines for milestone completion</li>
-    </ul>
+    <main>
+        <h3>New Business:</h3>
+        <ul>
+            <li><i>Decide</i> on if Jenkins is the best fit for a safety</li>
+            <li><em>Select</em> the <strong>right</strong> linebacker as the main linebacker (most likely Jerome Baker)</li>
+        </ul>
 
-    <h3>Miscellaneous Comments / Questions / Concerns:</h3>
-    <p>No comments at the moment.</p>
+        <h3>Miscellaneous Comments / Questions / Concerns:</h3>
+        <p><b>No</b> comments at the moment.</p>
+    </main>
+    
+    <footer>
+        <details>
+            <summary>New Signing: Jerome Baker</summary>
+            <img src="https://pbs.twimg.com/media/GI1Mm9cXsAAIS7_?format=jpg&name=large" alt="Image of Jerome Baker">
+        </details>
+    </footer>
 
-    <h3>Presentation:</h3>
-    <img src="diagram.jpg" alt="Diagram of Pomodoro Timer Architecture">
+    <hr>
 
-    <h3>Audio Recording of the Meeting:</h3>
-    <audio controls>
-        <source src="meeting_audio.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+    <section>
+        <h3>Audio Recording of the Meeting:</h3>
+        <audio controls>
+            <source src="meeting_audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <br>
 
     <h3>Video Recording of the Meeting:</h3>
     <video controls>
         <source src="meeting_video.mp4" type="video/mp4">
         Your browser does not support the video element.
     </video>
+
+    <h3>Submit Your Visit to this Page</h3>
+    <form action="favicon.ico">
+        <fieldset>
+            <label for="titles">Gender:</label>
+            <select name="titles" id="titles">
+                <option value="mr">Mr.</option>
+                <option value="ms">Ms.</option>
+                <option value="mrs">Mrs.</option>
+            </select>
+
+            <br><br>
+
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" list="fnames" name="fname"><br><br>
+            
+            <datalist id="fnames">
+                <option value="Pranav">
+                <option value="John">
+            </datalist>
+
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" list="lnames" name="lname"><br><br>
+
+            <datalist id="lnames">
+                <option value="Prabu">
+                <option value="Doe">
+            </datalist>
+
+            <input type="submit" value="Submit">
+        </fieldset>
+      </form>
+
+      <textarea id="texta" name="texta" rows="4" cols="50">This info will be used for logging traffic on the meeting notes.</textarea>
+
+      <br>
+
+      <button type="button" onclick="alert('Boo!')">Click for a surprise!</button>
+
 </body>
 </html>
