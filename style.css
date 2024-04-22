@@ -1,0 +1,178 @@
+:root {
+    --main-bg-color: pink;
+  }
+
+  @font-face {
+    font-family: "Bitstream Vera Serif Bold";
+    src: url("https://mdn.github.io/css-examples/web-fonts/VeraSeBd.ttf");
+  }
+
+html {
+    font-family: "Bitstream Vera Serif Bold";
+}
+
+h2 {
+    color: rgb(44, 255, 155);
+    background-color: var(--main-bg-color, goldenrod);
+    font-size: 2em
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: normal
+}
+
+.container {
+    display: grid;
+    grid-template: none;
+    column-gap: 10px;
+    row-gap: 15px
+  }
+
+@media screen and (max-width: 768px) {
+    /* Adjustments for tablet or smaller laptop */
+    header {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Adjustments for very small screen (phone) */
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+.special-text {
+    font-style: italic;
+}
+
+/* ID Selector */
+#lname {
+    font-weight: bold;
+}
+
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Element Selector */
+input {
+    border: 1px solid #ccc;
+}
+
+/* Attribute Selector */
+[type="text"] {
+    background-color: #f9f9f9;
+}
+
+h3 {
+    color: #fff000;
+    font-size: 1rem;
+    position:sticky;
+    display: inline-block
+}
+
+p {
+    color: hsl(1, 25, 32);
+    font-size: 12px;
+    text-decoration: underline;
+    text-align: center;
+    position: relative;
+    display: block
+}
+
+span {
+    color: color(RGB 255 0 0 / 1);
+    font-size: 1.5vh 
+}
+
+div {
+    color: color-mix(in srgb, #34c9eb 20%, white);
+    height: 200px;
+    width: 50%;
+    max-height: fit-content;
+    max-width: fit-content
+}
+
+button:hover {
+    color: green
+}
+
+button:active {
+    color: blue
+}
+
+header {
+    margin-top: 20px;
+    margin-bottom: 20mm;
+    margin-left: 5pt;
+    margin-right: 5pt
+}
+
+footer {
+    margin: 20px 5px 10px 5px
+}
+
+ul {
+    padding: 10px 10px 5px 5px;
+    margin:auto
+}
+
+textarea {
+    border-style: double;
+    border-color: aquamarine;
+    border-width: 2em;
+    border-radius: 1cm;
+}
+
+ol {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px
+}
+
+h3, ol {
+    color: blue;
+}
+
+/* Combinators */
+/* Descendant Combinator */
+header h1 {
+    text-transform: uppercase;
+}
+
+/* Child Combinator */
+ul > li {
+    list-style-type: none;
+}
+
+/* General sibling combinator */
+h3 ~ p {
+    font-size: 20px;
+}
+
+/* Adjacent sibling combinator */
+ul + h3 {
+    color: red;
+}
+
+/* Combining Two Selectors */
+h3.special {
+    font-weight: bold;
+}
+
+/* :has() */
+ol:has(li) {
+    border: 1px solid black;
+}
+
+/* Nested Selectors */
+main ul {
+    background-color: lightgray;
+}
