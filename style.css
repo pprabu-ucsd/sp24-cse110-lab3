@@ -78,7 +78,7 @@ h3 {
 }
 
 p {
-    color: hsl(1, 25, 32);
+    color: hsla(1, 82%, 22%, 0.884);
     font-size: 12px;
     text-decoration: underline;
     text-align: center;
@@ -87,12 +87,12 @@ p {
 }
 
 span {
-    color: color(RGB 255 0 0 / 1);
+    color: color(display-p3 0 1 0);
     font-size: 1.5vh 
 }
 
 div {
-    color: color-mix(in srgb, #34c9eb 20%, white);
+    color: color-mix(in srgb, #34c9eb, white);
     height: 200px;
     width: 50%;
     max-height: fit-content;
