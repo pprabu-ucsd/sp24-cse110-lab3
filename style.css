@@ -87,12 +87,12 @@ p {
 }
 
 span {
-    color: color(display-p3 0 1 0);
+    color: color(display-p3 red green blue);
     font-size: 1.5vh 
 }
 
 div {
-    color: color-mix(in srgb, #34c9eb, white);
+    color: color-mix(srgb, #34c9eb, white);
     height: 200px;
     width: 50%;
     max-height: fit-content;
